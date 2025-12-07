@@ -1,4 +1,63 @@
 export default {
+  'dns-orchestrator': {
+    id: 'dns-orchestrator',
+
+    tags: ['Tauri', 'React', 'Rust', 'TypeScript', 'DNS', 'Desktop App', 'Cross-Platform'],
+
+    githubUrl: 'https://github.com/AptS-1547/dns-orchestrator',
+
+    language: 'TypeScript',
+
+    status: 'active',
+
+    license: 'MIT',
+    title: 'DNS Orchestrator',
+    description: 'Cross-platform desktop app for unified DNS record management across multiple providers',
+    longDescription:
+      'DNS Orchestrator is a cross-platform desktop application for unified management of DNS records across multiple DNS service providers. It supports Cloudflare, Alibaba Cloud DNS, Tencent Cloud DNSPod, and Huawei Cloud DNS, featuring secure credential storage, advanced search and filtering, account import/export, and built-in network toolbox.',
+    features: [
+      'Multi-account management with secure system keychain storage',
+      'Universal DNS management across multiple providers',
+      'Support for Cloudflare, Alibaba Cloud, Tencent Cloud, Huawei Cloud',
+      'Advanced search, filtering, and infinite scroll pagination',
+      'Encrypted account configuration import/export',
+      'Built-in DNS lookup and WHOIS query toolbox',
+      'Dark/light theme support with system preference detection',
+      'Bilingual interface (English and Chinese)',
+      'Cross-platform support (macOS, Windows, Linux)',
+    ],
+    techStack: [
+      {
+        name: 'frontend',
+        items: [
+          { name: 'React 19', purpose: 'Modern UI framework' },
+          { name: 'TypeScript 5', purpose: 'Type-safe development' },
+          { name: 'Tailwind CSS 4', purpose: 'Utility-first styling system' },
+          { name: 'Radix UI', purpose: 'Accessible UI component library' },
+          { name: 'Zustand 5', purpose: 'Lightweight state management' },
+          { name: 'i18next', purpose: 'Internationalization support' },
+        ],
+      },
+      {
+        name: 'backend',
+        items: [
+          { name: 'Tauri 2', purpose: 'Cross-platform desktop app framework' },
+          { name: 'Rust', purpose: 'High-performance backend core' },
+          { name: 'Tokio', purpose: 'Async runtime' },
+          { name: 'keyring', purpose: 'System keychain integration' },
+        ],
+      },
+      {
+        name: 'tools',
+        items: [
+          { name: 'Vite 7', purpose: 'Fast build tool' },
+          { name: 'pnpm', purpose: 'Efficient package manager' },
+          { name: 'GitHub Actions', purpose: 'CI/CD and multi-platform builds' },
+        ],
+      },
+    ],
+  },
+
   shortlinker: {
     id: 'shortlinker',
 

@@ -1,4 +1,63 @@
 export default {
+  'dns-orchestrator': {
+    id: 'dns-orchestrator',
+
+    tags: ['Tauri', 'React', 'Rust', 'TypeScript', 'DNS', 'Desktop App', 'Cross-Platform'],
+
+    githubUrl: 'https://github.com/AptS-1547/dns-orchestrator',
+
+    language: 'TypeScript',
+
+    status: 'active',
+
+    license: 'MIT',
+    title: 'DNS Orchestrator',
+    description: '複数のDNSプロバイダーを統一管理するクロスプラットフォームデスクトップアプリ',
+    longDescription:
+      'DNS Orchestratorは、複数のDNSサービスプロバイダーのDNSレコードを統一管理するためのクロスプラットフォームデスクトップアプリケーションです。Cloudflare、阿里雲DNS、騰訊雲DNSPod、華為雲DNSをサポートし、安全な認証情報ストレージ、高度な検索とフィルタリング、アカウントのインポート/エクスポート、内蔵ネットワークツールボックスなどの機能を提供します。',
+    features: [
+      'システムキーチェーンへの安全な認証情報保存によるマルチアカウント管理',
+      '複数プロバイダーにまたがるユニバーサルDNS管理',
+      'Cloudflare、阿里雲、騰訊雲、華為雲をサポート',
+      '高度な検索、フィルタリング、無限スクロールページネーション',
+      '暗号化されたアカウント設定のインポート/エクスポート',
+      '内蔵DNSルックアップとWHOISクエリツールボックス',
+      'システム設定検出によるダーク/ライトテーマサポート',
+      'バイリンガルインターフェース（英語と中国語）',
+      'クロスプラットフォームサポート（macOS、Windows、Linux）',
+    ],
+    techStack: [
+      {
+        name: 'frontend',
+        items: [
+          { name: 'React 19', purpose: 'モダンUIフレームワーク' },
+          { name: 'TypeScript 5', purpose: '型安全な開発' },
+          { name: 'Tailwind CSS 4', purpose: 'ユーティリティファーストスタイリングシステム' },
+          { name: 'Radix UI', purpose: 'アクセシブルなUIコンポーネントライブラリ' },
+          { name: 'Zustand 5', purpose: '軽量状態管理' },
+          { name: 'i18next', purpose: '国際化サポート' },
+        ],
+      },
+      {
+        name: 'backend',
+        items: [
+          { name: 'Tauri 2', purpose: 'クロスプラットフォームデスクトップアプリフレームワーク' },
+          { name: 'Rust', purpose: '高性能バックエンドコア' },
+          { name: 'Tokio', purpose: '非同期ランタイム' },
+          { name: 'keyring', purpose: 'システムキーチェーン統合' },
+        ],
+      },
+      {
+        name: 'tools',
+        items: [
+          { name: 'Vite 7', purpose: '高速ビルドツール' },
+          { name: 'pnpm', purpose: '効率的なパッケージマネージャー' },
+          { name: 'GitHub Actions', purpose: 'CI/CDとマルチプラットフォームビルド' },
+        ],
+      },
+    ],
+  },
+
   shortlinker: {
     id: 'shortlinker',
 

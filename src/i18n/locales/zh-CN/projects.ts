@@ -1,4 +1,63 @@
 export default {
+  'dns-orchestrator': {
+    id: 'dns-orchestrator',
+
+    tags: ['Tauri', 'React', 'Rust', 'TypeScript', 'DNS', 'Desktop App', 'Cross-Platform'],
+
+    githubUrl: 'https://github.com/AptS-1547/dns-orchestrator',
+
+    language: 'TypeScript',
+
+    status: 'active',
+
+    license: 'MIT',
+    title: 'DNS Orchestrator - DNS 统一管理平台',
+    description: '跨平台桌面应用，统一管理多个 DNS 服务商的域名解析记录',
+    longDescription:
+      'DNS Orchestrator 是一个跨平台桌面应用程序，用于统一管理多个 DNS 服务商的域名解析记录。支持 Cloudflare、阿里云 DNS、腾讯云 DNSPod、华为云 DNS 等主流服务商，提供安全的凭证存储、高级搜索过滤、账户导入导出以及内置网络工具箱等功能。',
+    features: [
+      '多账户管理，安全存储凭证到系统密钥链',
+      '统一管理多个 DNS 服务商的解析记录',
+      '支持 Cloudflare、阿里云、腾讯云、华为云',
+      '高级搜索过滤和无限滚动分页',
+      '加密的账户配置导入导出',
+      '内置 DNS 查询和 WHOIS 工具箱',
+      '深色/浅色主题切换',
+      '中英双语界面',
+      '跨平台支持（macOS、Windows、Linux）',
+    ],
+    techStack: [
+      {
+        name: 'frontend',
+        items: [
+          { name: 'React 19', purpose: '现代化 UI 框架' },
+          { name: 'TypeScript 5', purpose: '类型安全开发' },
+          { name: 'Tailwind CSS 4', purpose: '实用优先的样式系统' },
+          { name: 'Radix UI', purpose: '无障碍 UI 组件库' },
+          { name: 'Zustand 5', purpose: '轻量级状态管理' },
+          { name: 'i18next', purpose: '国际化支持' },
+        ],
+      },
+      {
+        name: 'backend',
+        items: [
+          { name: 'Tauri 2', purpose: '跨平台桌面应用框架' },
+          { name: 'Rust', purpose: '高性能后端核心' },
+          { name: 'Tokio', purpose: '异步运行时' },
+          { name: 'keyring', purpose: '系统密钥链集成' },
+        ],
+      },
+      {
+        name: 'tools',
+        items: [
+          { name: 'Vite 7', purpose: '快速构建工具' },
+          { name: 'pnpm', purpose: '高效包管理器' },
+          { name: 'GitHub Actions', purpose: 'CI/CD 和多平台构建' },
+        ],
+      },
+    ],
+  },
+
   shortlinker: {
     id: 'shortlinker',
 
