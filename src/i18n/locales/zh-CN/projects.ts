@@ -58,6 +58,56 @@ export default {
     ],
   },
 
+  'gcop-rs': {
+    id: 'gcop-rs',
+
+    tags: ['Rust', 'Git', 'AI', 'CLI', 'Code Review', 'LLM'],
+
+    githubUrl: 'https://github.com/AptS-1547/gcop-rs',
+
+    language: 'Rust',
+
+    status: 'active',
+
+    license: 'MIT',
+    title: 'gcop-rs - AI Git 助手',
+    description: '使用 Rust 编写的 AI 驱动 Git 提交信息生成器和代码审查工具',
+    longDescription:
+      'gcop-rs 是一个使用 Rust 编写的 AI 驱动 Git 提交信息生成器和代码审查工具。这是原始 gcop 项目（Python）的 Rust 重写版本，提供更好的性能、可靠性和可维护性。支持 Claude、OpenAI 和 Ollama 等多种 LLM 提供商，具有便捷的 Git 别名、自定义提示词和灵活的配置选项。',
+    features: [
+      '使用 Claude、OpenAI 或 Ollama 生成规范的提交信息',
+      'AI 驱动的代码审查，提供安全性和性能洞察',
+      '便捷的 Git 别名（git c、git r、git acp）简化工作流',
+      '交互式 init 命令快速配置',
+      '支持任何 OpenAI/Claude 兼容 API（DeepSeek 等）',
+      '使用模板变量自定义生成和审查提示词',
+      '通过文件或环境变量灵活配置',
+      '美观的 CLI 界面，带有加载动画和彩色输出',
+      '调试模式，提供完整的请求/响应日志',
+      '完整支持 GPG 提交签名',
+    ],
+    techStack: [
+      {
+        name: 'backend',
+        items: [
+          { name: 'Rust', purpose: '高性能核心语言' },
+          { name: 'Tokio', purpose: '异步运行时' },
+          { name: 'Clap', purpose: 'CLI 参数解析框架' },
+          { name: 'Reqwest', purpose: 'HTTP 客户端' },
+          { name: 'git2', purpose: 'Git 操作库' },
+        ],
+      },
+      {
+        name: 'tools',
+        items: [
+          { name: 'Cargo', purpose: 'Rust 包管理和构建' },
+          { name: 'GitHub Actions', purpose: 'CI/CD 流水线' },
+          { name: 'crates.io', purpose: 'Rust 包发布平台' },
+        ],
+      },
+    ],
+  },
+
   shortlinker: {
     id: 'shortlinker',
 

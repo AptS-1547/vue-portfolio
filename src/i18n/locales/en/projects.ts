@@ -58,6 +58,56 @@ export default {
     ],
   },
 
+  'gcop-rs': {
+    id: 'gcop-rs',
+
+    tags: ['Rust', 'Git', 'AI', 'CLI', 'Code Review', 'LLM'],
+
+    githubUrl: 'https://github.com/AptS-1547/gcop-rs',
+
+    language: 'Rust',
+
+    status: 'active',
+
+    license: 'MIT',
+    title: 'gcop-rs',
+    description: 'AI-powered Git commit message generator and code reviewer, written in Rust',
+    longDescription:
+      'gcop-rs is an AI-powered Git commit message generator and code reviewer written in Rust. This is a Rust rewrite of the original gcop project (Python), providing better performance, reliability, and maintainability. It supports multiple LLM providers including Claude, OpenAI, and Ollama, featuring convenient Git aliases, custom prompts, and flexible configuration options.',
+    features: [
+      'Generate conventional commit messages using Claude, OpenAI, or Ollama',
+      'AI-powered code reviews with security and performance insights',
+      'Convenient Git aliases (git c, git r, git acp) for streamlined workflow',
+      'Interactive init command for quick configuration',
+      'Support any OpenAI/Claude compatible API (DeepSeek, custom endpoints, etc.)',
+      'Customize generation and review prompts with template variables',
+      'Flexible configuration via file or environment variables',
+      'Beautiful CLI with spinner animations and colored output',
+      'Debug mode with verbose logging and full request/response inspection',
+      'Full support for GPG commit signing via native git',
+    ],
+    techStack: [
+      {
+        name: 'backend',
+        items: [
+          { name: 'Rust', purpose: 'High-performance core language' },
+          { name: 'Tokio', purpose: 'Async runtime' },
+          { name: 'Clap', purpose: 'CLI argument parsing framework' },
+          { name: 'Reqwest', purpose: 'HTTP client' },
+          { name: 'git2', purpose: 'Git operations library' },
+        ],
+      },
+      {
+        name: 'tools',
+        items: [
+          { name: 'Cargo', purpose: 'Rust package management and building' },
+          { name: 'GitHub Actions', purpose: 'CI/CD pipeline' },
+          { name: 'crates.io', purpose: 'Rust package registry' },
+        ],
+      },
+    ],
+  },
+
   shortlinker: {
     id: 'shortlinker',
 

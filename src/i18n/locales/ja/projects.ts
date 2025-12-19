@@ -58,6 +58,56 @@ export default {
     ],
   },
 
+  'gcop-rs': {
+    id: 'gcop-rs',
+
+    tags: ['Rust', 'Git', 'AI', 'CLI', 'Code Review', 'LLM'],
+
+    githubUrl: 'https://github.com/AptS-1547/gcop-rs',
+
+    language: 'Rust',
+
+    status: 'active',
+
+    license: 'MIT',
+    title: 'gcop-rs',
+    description: 'Rustで書かれたAI駆動のGitコミットメッセージ生成器とコードレビューツール',
+    longDescription:
+      'gcop-rsは、Rustで書かれたAI駆動のGitコミットメッセージ生成器とコードレビューツールです。これはオリジナルのgcopプロジェクト（Python）のRust書き直し版で、より優れたパフォーマンス、信頼性、保守性を提供します。Claude、OpenAI、Ollamaなど複数のLLMプロバイダーをサポートし、便利なGitエイリアス、カスタムプロンプト、柔軟な設定オプションを備えています。',
+    features: [
+      'Claude、OpenAI、またはOllamaを使用した規約に準拠したコミットメッセージの生成',
+      'セキュリティとパフォーマンスの洞察を提供するAI駆動のコードレビュー',
+      'ワークフローを効率化する便利なGitエイリアス（git c、git r、git acp）',
+      'クイック設定のためのインタラクティブなinitコマンド',
+      '任意のOpenAI/Claude互換API（DeepSeekなど）をサポート',
+      'テンプレート変数を使用した生成およびレビュープロンプトのカスタマイズ',
+      'ファイルまたは環境変数による柔軟な設定',
+      'スピナーアニメーションとカラー出力を備えた美しいCLI',
+      '詳細なログと完全なリクエスト/レスポンス検査を備えたデバッグモード',
+      'ネイティブgitによるGPGコミット署名の完全サポート',
+    ],
+    techStack: [
+      {
+        name: 'backend',
+        items: [
+          { name: 'Rust', purpose: '高性能コア言語' },
+          { name: 'Tokio', purpose: '非同期ランタイム' },
+          { name: 'Clap', purpose: 'CLI引数解析フレームワーク' },
+          { name: 'Reqwest', purpose: 'HTTPクライアント' },
+          { name: 'git2', purpose: 'Git操作ライブラリ' },
+        ],
+      },
+      {
+        name: 'tools',
+        items: [
+          { name: 'Cargo', purpose: 'Rustパッケージ管理とビルド' },
+          { name: 'GitHub Actions', purpose: 'CI/CDパイプライン' },
+          { name: 'crates.io', purpose: 'Rustパッケージレジストリ' },
+        ],
+      },
+    ],
+  },
+
   shortlinker: {
     id: 'shortlinker',
 
